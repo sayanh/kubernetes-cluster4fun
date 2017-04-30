@@ -1,0 +1,4 @@
+- name: configure docker service
+  copy: src=daemon.json dest=/etc/docker/daemon.json
+- name: start service
+  service: name=docker state=restarted

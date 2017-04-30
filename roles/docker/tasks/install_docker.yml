@@ -1,0 +1,14 @@
+---
+- name: add docker repo
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/debian jessie stable
+    state: present
+- name: Add apt key
+  apt_key:
+    id: 0EBFCD88
+    url: https://download.docker.com/linux/debian/gpg
+    state: present
+- name: install docker
+  apt: name=docker-ce update_cache=true
+- name: start service
+  service: name=docker state=started

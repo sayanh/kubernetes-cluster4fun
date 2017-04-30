@@ -1,0 +1,9 @@
+---
+# defaults file for base
+apt:
+  packages:
+    - apt-transport-https
+    - curl
+    - ca-certificates
+    - gnupg2
+    - software-properties-common
