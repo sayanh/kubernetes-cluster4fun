@@ -42,7 +42,5 @@
   "selinux-enabled": false,
   "storage-driver": "",
   "storage-opts": [],
-  "swarm-default-advertise-addr": "",
-  "userland-proxy": false,
-  "userns-remap": "default"
+  "swarm-default-advertise-addr": ""
 }

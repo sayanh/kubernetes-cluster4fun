@@ -1,0 +1,15 @@
+---
+- name: Add sources
+  apt_repository:
+    repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
+    state: present
+    filename: 'kubernetes'
+
+- name: Add kubelet repo key
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
+- name: Install kubelet binaries
+  apt: name="{{ item }}" update_cache=yes
+  with_items: "{{ kubelet.packages }}"

@@ -1,0 +1,8 @@
+---
+# defaults file for kubelet
+kubelet:
+  packages:
+    - kubelet
+    - kubeadm
+    - kubectl
+    - kubernetes-cni

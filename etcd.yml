@@ -1,9 +1,10 @@
 ---
-- hosts: "{{ host }}"
-  remote_user: vagrant
+# playbook for etcd
+- hosts: etcd1
   become: true
+  remote_user: vagrant
   gather_facts: true
   roles:
     - base
     - docker
-    - kubelet
+    - etcd

@@ -9,28 +9,28 @@
   boxes = [
     {
       :name => 'master1',
-      :box => 'debian/contrib-jessie64',
+      :box => 'ubuntu/xenial64',
       :ip => '192.168.1.2',
       :cpu => '33',
       :ram => '1024'
     },
     {
       :name => 'node1',
-      :box => 'debian/contrib-jessie64',
+      :box => 'ubuntu/xenial64',
       :ip => '192.168.1.3',
       :cpu => '33',
       :ram => '1024'
     },
     {
       :name => 'node2',
-      :box => 'debian/contrib-jessie64',
+      :box => 'ubuntu/xenial64',
       :ip => '192.168.1.4',
       :cpu => '33',
       :ram => '1024'
     },
     {
         :name => 'etcd1',
-        :box => 'debian/contrib-jessie64',
+        :box => 'ubuntu/xenial64',
         :ip => '192.168.1.5',
         :cpu => '33',
         :ram => '1024'
